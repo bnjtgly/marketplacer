@@ -36,6 +36,9 @@ Once the application starts, you will see a menu with options. Here’s how to i
 - Description: Load products from a JSON file into the application.
 - Command: Select option 1.
 - Instructions: You will be prompted to enter the file path of the JSON file containing product data. Enter the path and press Enter.
+- Sample Run:
+- ```Enter the file path for the products JSON file (or type 'done' to finish): products.json```
+- ```Enter the file path for the products JSON file (or type 'done' to finish): products2.json```
 2. List Products
 - Description: Display all the products currently loaded into the application.
 - Command: Select option 2.
