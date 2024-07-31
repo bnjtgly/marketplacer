@@ -13,6 +13,7 @@ class CheckoutApp
     @products = []
     @cart_service = CartService.new
     @discount_service = DiscountService
+    @loaded_files = []
   end
 
   def run
@@ -64,9 +65,15 @@ class CheckoutApp
 
       break if file_path.downcase == 'done'
 
+      if @loaded_files.include?(file_path)
+        puts "Products from '#{file_path}' have already been loaded."
+        next
+      end
+
       begin
         products = ProductLoaderService.load_products(file_path)
         @products.concat(products)
+        @loaded_files << file_path # Track the loaded file
         puts "Products from '#{file_path}' loaded successfully."
       rescue Errno::ENOENT
         puts "Error: File not found '#{file_path}'. Please check the file path and try again."
