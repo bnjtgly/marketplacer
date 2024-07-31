@@ -24,7 +24,7 @@ ruby bin/checkout_app.rb
 ## Running Tests
 To run the tests, use the following command:
 ```bash
-bundle exec rspec spec
+bundle exec rspec
 ```
 
 ## Application Menu
