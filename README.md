@@ -8,23 +8,23 @@
 1. Clone the repository
 2. Navigate to the Project Directory
 ```bash
-$ cd marketplacer
+cd marketplacer
 ```
 3. Install Dependencies
 ```bash
-$ bundle install
+bundle install
 ```
 
 ## Running the Application
 To run the application, use the following command:
 ```bash
-$ ruby bin/checkout_app.rb
+ruby bin/checkout_app.rb
 ```
 
 ## Running Tests
 To run the tests, use the following command:
 ```bash
-$ bundle exec rspec spec
+bundle exec rspec spec
 ```
 
 ## Application Menu
